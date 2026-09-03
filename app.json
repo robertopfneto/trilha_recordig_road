@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "Trilha",
+    "slug": "trilha",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "trilha",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "bundleIdentifier": "trilha.recording.road",
+      "supportsTablet": false,
+      "infoPlist": {
+        "UIBackgroundModes": ["location"]
+      }
+    },
+    "android": {
+      "package": "trilha.recording.road",
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "FOREGROUND_SERVICE",
+        "FOREGROUND_SERVICE_LOCATION",
+        "CAMERA",
+        "RECORD_AUDIO"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "isAndroidBackgroundLocationEnabled": true,
+          "isIosBackgroundLocationEnabled": true,
+          "isAndroidForegroundServiceEnabled": true,
+          "locationAlwaysAndWhenInUsePermission": "O Trilha registra seu percurso mesmo com a tela apagada, para vincular cada vídeo ao lugar onde foi gravado.",
+          "locationWhenInUsePermission": "O Trilha marca o local de cada vídeo que você grava."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "O Trilha precisa da câmera para gravar os vídeos do seu percurso.",
+          "microphonePermission": "O Trilha grava o áudio junto com o vídeo.",
+          "recordAudioAndroid": true
+        }
+      ],
+      [
+        "expo-video",
+        {
+          "supportsBackgroundPlayback": false,
+          "supportsPictureInPicture": false
+        }
+      ]
+    ]
+  }
+}

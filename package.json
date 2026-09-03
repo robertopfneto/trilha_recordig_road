@@ -1,0 +1,39 @@
+{
+  "name": "trilha",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "main": "expo-router/entry",
+  "scripts": {
+    "start": "expo start --dev-client",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "prebuild": "expo prebuild --clean",
+    "lint": "expo lint",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test --experimental-strip-types \"tests/*.test.ts\""
+  },
+  "dependencies": {
+    "expo": "~56.0.0",
+    "expo-camera": "~18.0.0",
+    "expo-constants": "~19.0.0",
+    "expo-file-system": "~20.0.0",
+    "expo-linking": "~9.0.0",
+    "expo-location": "~19.0.0",
+    "expo-router": "~7.0.0",
+    "expo-sqlite": "~17.0.0",
+    "expo-status-bar": "~3.0.0",
+    "expo-task-manager": "~14.0.0",
+    "expo-video": "~4.0.0",
+    "react": "19.1.0",
+    "react-native": "0.82.0",
+    "react-native-gesture-handler": "~2.29.0",
+    "react-native-maps": "1.20.1",
+    "react-native-safe-area-context": "~5.7.0",
+    "react-native-screens": "~4.19.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.1.0",
+    "typescript": "~5.9.2"
+  }
+}
